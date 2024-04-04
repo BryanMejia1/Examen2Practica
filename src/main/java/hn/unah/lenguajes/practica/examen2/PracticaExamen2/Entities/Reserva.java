@@ -26,7 +26,7 @@ public class Reserva {
     @Column(name="idvehiculo")
     private int idVehiculo;
 
-    private LocalDate fecha;
+    private LocalDate fecha = LocalDate.now();
 
     private int dias;
 

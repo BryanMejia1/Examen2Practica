@@ -11,6 +11,8 @@ import lombok.Data;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="tipovehiculo")
 @Data
@@ -26,6 +28,7 @@ public class TipoVehiculo {
     @Column(name="precioxhora")
     private double precioXHora;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "tipovehiculo")
     private List<Vehiculos> vehiculos;
 }

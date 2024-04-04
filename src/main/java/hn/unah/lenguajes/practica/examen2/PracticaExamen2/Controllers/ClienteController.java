@@ -32,7 +32,7 @@ public class ClienteController {
     }
 
     @GetMapping("/obtenerClientePorId")
-    public Cliente obtenerClientePorId(@RequestParam(name="idcliente") int id) {
+    public Cliente obtenerClientePorId(@RequestParam(name="id") int id) {
         return this.clienteServiceImpl.obtenerClientePorId(id);
     }
     
